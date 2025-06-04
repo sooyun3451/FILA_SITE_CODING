@@ -16,29 +16,75 @@
 /* 탑 배너 */
 #topBanner {
   position: relative;
+  /* 
+    문법의미: 위치기준으로 설정
+    사용이유/목적/결과: 탑배너의 x버튼을 탑배너 영역 오른쪽상단에 배치할때 위치 기준으로 사용하기 위해
+  */
   height: 40px;
+  /* 
+    문법의미: 공간의 높이값 설정
+    사용이유/목적/결과: 탑배너는 특정 크기로 설정되어 표시되기 때문
+  */
   background-color: #002053;
+    /* 
+    문법의미: 공간의 배경색 설정
+    사용이유/목적/결과: 탑배너의 배경색을 설정하기 위해서
+  */
 }
 
 #topBanner .content a {
   display: block;
+  /* 
+    문법의미: inline요소를 block요소로 변경
+    사용이유/목적/결과: a태그의 영역을 공간에 다 채우기 위해서 
+  */
   width: 600px;
+  /* 
+    문법의미: 가로의 폭 설정
+    사용이유/목적/결과: 가로의 폭을 설정하기 위해서 
+  */
   margin-left: auto;
   margin-right: auto;
+  /* 
+    문법의미: 브라우저의 요소가 가질수 있는 가로 영역에서 자신의 width를 제외한 나머지 여백에 크기에 대해 균등 분할 하여 적용
+    사용이유/목적/결과: 요소를 정 중앙에 오게 하기 위해서 
+  */
   color: #fff;
+  /* 
+    문법의미: 글자의 색 설정
+    사용이유/목적/결과: 글자의 색을 #fff로 설정하기 위해서
+  */
   line-height: 40px;
+  /* 
+    문법의미: 텍스트의 라인 높이(line height)를 설정
+    사용이유/목적/결과: 안의 글자를 정중앙에 배치하기 위해서
+  */
   text-align: center;
+  /* 
+    문법의미: 글자를 정 중앙에 오도록 설정
+    사용이유/목적/결과: 글자를 중앙에 배치하기 위해서
+  */
 }
 
 #topBanner .btnClose {
   position: absolute;
+  /* 문법의미: 부모 요소를 기준으로 배치 */
   top: 4px;
   right: 40px;
+  /* 사용이유/목적/결과: 버튼을 부모기준 위에서 4px 오른쪽에서 4px 띄우기 위해서 */
 }
 
 #topBanner .btnClose button {
   width: 32px;
+  /* 
+    문법의미: 가로의 폭 설정
+    사용이유/목적/결과: 가로의 폭을 설정하기 위해서 
+  */
   height: 32px;
+  /* 
+    문법의미: 세로의 폭 설정
+    사용이유/목적/결과: 세로의 폭을 설정하기 위해서 
+  */
   text-indent: -99999px;
   /*
     공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
@@ -47,17 +93,39 @@
   background-color: transparent;
   /* 배경색 투명색으로 */
   border: 0;
+  /* 
+    문법의미: 테두리를 쓰지않게 설정
+    사용이유/목적/결과: 태두리를 없애기 위해서
+  */
   background-image: url(../img/btn_x_wh_32x32.png);
+  /* 
+    문법의미: 백그라운드 이미지 설정
+    사용이유/목적/결과: 백그라운드 이미지를 주기 위해서 
+  */
 }
 
 /* 헤더영역 */
 #header {
   position: absolute;
+  /* 문법의미: 부모요소를 기준으로 배치 */
   top: 40px;
   left: 0;
+  /* 사용이유/목적/결과: 부모 기준으로 위에서 40px 왼쪽에서 0으로 배치하기 위해서  */
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   justify-content: space-between;
+  /* 
+    문법의미: 항목들을 고르게 정렬 첫 항목은 시작 부분에 밀착되어 정렬됩니다.마지막 항목은 끝 부분에 밀착되어 정렬됩니다. 
+    사용이유/목적/결과: 양쪽끝으로 아이템들을 배치하기 위해서
+  */
   align-items: center;
+  /* 
+    문법의미: 플렉스 아이템의 마진 박스는 교차 축의 라인에서 가운데 정렬됩니다.
+    사용이유/목적/결과: 아이템들을 중앙에 배치하기 위해서 
+  */
   box-sizing: border-box;
   /* 
     box-sizing은 width속성의 범위 기준을 결정하는 속성
@@ -71,27 +139,75 @@
     표현되니 나머지 영역에 맞취 작성됨.
   */
   width: 100%;
+  /* 
+    문법의미: 가로넚이를 100%채우기 위한 설정
+    사용이유/목적/결과: 공간을 100%차지 
+  */
   height: 100px;
+  /* 
+    문법의미: 높이값 설정
+    사용이유/목적/결과: 높이를 100px로 설정
+  */
   padding-left: 40px;
   padding-right: 40px;
+  /* 
+    문법의미: 레이아웃에 여백을 설정
+    사용이유/목적/결과: 중앙 배치
+  */
   z-index: 500;
+  /* 
+    문법의미: 요소를 앞으로 나오게 설정
+    사용이유/목적/결과: 앞으로 배치하기 위해서
+  */
 }
 
 #header .logo a{
   display: block;
+  /* 
+    문법의미: inline요소를 block요소로 변경
+    사용이유/목적/결과: a태그의 영역을 공간에 다 채우기 위해서 
+  */
   width: 100px;
+  /* 
+    문법의미: 가로넓이 설정
+    사용이유/목적/결과: 가로를 100px로 설정
+  */
   height: 32px;
+  /* 
+    문법의미: 세로길이 설정
+    사용이유/목적/결과: 세로를 32px로 설정
+  */
   text-indent: -99999px;
+  /*
+    공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
+    값을 크게 만들어 어떤 크기의 화면에서도 보이지 않게 만듬.
+  */
   background-image: url(../img/logo_wh.png);
+  /* 
+    문법의미: 백그라운드 이미지 설정
+    사용이유/목적/결과: 백그라운드 이미지를 주기 위해서 
+  */
 }
 
 .gnb {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
 }
 
 .gnb ul {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   gap: 32px;
+  /* 
+    문법의미: 아이템 사이의 간격을 일정하게 띄우게 설정
+    사용이유/목적/결과: 아이템 사이의 간격을 32px로 띄우기
+  */
 }
 
 /*
@@ -120,56 +236,153 @@
 
 .gnb li a {
   font-size: 18px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자 크기를 18px로 설정
+  */
   font-weight: 700;
+  /* 
+    문법의미: 글자 굵기 설정
+    사용이유/목적/결과: 글자 긁기를 700으로 설정
+  */
   color: #fff;
+  /* 
+    문법의미: 글자 색깔을 설정
+    사용이유/목적/결과: 글자 색을 #fff로 설정
+  */
 }
 
 #header .icons ul{
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
 }
 
 #header .icons .cart {
   position: relative;
+  /* 
+    문법의미: 위치기준으로 설정
+    사용이유/목적/결과: 다른 아이템의 기준으로 삼기 위해서
+  */
 }
 
 #header .icons li a, #header .icons li button {
   display: block;
+  /* 
+    문법의미: inline요소를 block요소로 변경
+    사용이유/목적/결과: a태그의 영역을 공간에 다 채우기 위해서 
+  */
   width: 56px;
+  /* 
+    문법의미: 가로넓이 설정
+    사용이유/목적/결과: 가로의 넓이를 56px로 설정
+  */
   height: 56px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 세로의 높이를 56px로 설정
+  */
   text-indent: -99999px;
+  /*
+    공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
+    값을 크게 만들어 어떤 크기의 화면에서도 보이지 않게 만듬.
+  */
 }
 
 #header .icons .location a{
   background-image: url(../img/ico-store-wh-56x56.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
 }
 
 #header .icons .search button{
   border: 0;
+  /* 
+    문법의미: 테두리를 쓰지 않게 설정
+    사용이유/목적/결과: 버튼의 테두리를 없애기 위해서 사용
+  */
   background-color: transparent;
+  /* 
+    문법의미: 백그라운드 컬러를 투명하게 설정
+    사용이유/목적/결과: 배경색을 투명하게 주기 위해서 사용
+  */
   background-image: url(../img/ico-search-wh-56x56.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
 }
 
 #header .icons .login a{
   background-image: url(../img/ico-mypage-wh-56x56.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
 }
 
 #header .icons .cart a{
   background-image: url(../img/ico-cart-wh-56x56.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
 }
 
 #header .icons .cart .count {
   position: absolute;
+  /* 문법의미: 부모요소를 기준으로 배치 */
   top: 8px;
   right: 8px;
+ /* 사용이유/목적/결과: 부모기준 위에서 8px 오른쪽에서 8px에 배치 */
   display: block;
+  /* 
+    문법의미: inline요소를 block요소로 변경
+  */
   width: 20px;
+  /* 
+    문법의미: 가로 넓이를 설정
+    사용이유/목적/결과: 가로넓이를 20px로 설정
+  */
   height: 20px;
+  /* 
+    문법의미: 세로 높이를 설정
+    사용이유/목적/결과: 세로 높이를 20px로 설정
+  */
   border-radius: 50%;
+  /* 
+    문법의미: 테두리를 둥글게 설정
+    사용이유/목적/결과: 원을 만들기 위해서
+  */
   background-color: #002053;
+  /* 
+    문법의미: 배경색 설정
+    사용이유/목적/결과: 배경색을 #002053으로 설정
+  */
   color: #fff;
+  /* 
+    문법의미: 글자색 설정
+    사용이유/목적/결과: 글자색을 #fff로 설정
+  */
   text-align: center;
+  /* 
+    문법의미: 글자를 수평으로 가운데 배치
+    사용이유/목적/결과: 가운데 배치하기 위해서
+  */
   font-size: 10px;
+  /* 
+    문법의미: 글자 사이즈 설정
+    사용이유/목적/결과: 글자 크기를 18px로 설정
+  */
   line-height: 20px;
+  /* 
+    문법의미: 텍스트의 라인 높이(line height)를 설정
+    사용이유/목적/결과: 글자를 중앙에 배치하기 위해서
+  */
 }
 
 /* 본문 공통 */
@@ -202,54 +415,162 @@
 /* S.메인1-히어로 슬라이드 */
 .mainHero {
   position: relative;
+  /* 
+    문법의미: 위치기준으로 설정
+    사용이유/목적/결과: 다른 아이템의 기준으로 삼기 위해서
+  */
 }
 
 .mainHero .slide {
   position: relative;
+  /* 
+    문법의미: 위치기준으로 설정
+    사용이유/목적/결과: 다른 아이템의 기준으로 삼기 위해서
+  */
   overflow: hidden;
+  /* 
+    문법의미: 넘치는 것을 숨기기 위해서 사용
+    사용이유/목적/결과: 넘어가는 것들을 숨기기 위해서
+  */
 }
 
 .mainHero .slideImg {
   width: 1440px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 1440px로 설정
+  */
   margin-left: auto;
   margin-right: auto;
+  /* 
+    문법의미: 브라우저의 요소가 가질수 있는 가로 영역에서 자신의 width를 제외한 나머지 여백에 크기에 대해 균등 분할 하여 적용
+    사용이유/목적/결과: 요소를 정 중앙에 오게 하기 위해서 
+  */
 }
 
 .mainHero .slideImg img {
   margin-left: -240px;
+  /* 
+    문법의미: 요소의 왼쪽에 바깥 여백 영역을 설정 음수값은 더 좁힙니다.
+    사용이유/목적/결과: 이미지를 원래 위치보다 왼쪽으로 240px이동시키기 위해서
+  */
 }
 
 .mainHero .slideText {
   position: absolute;
+  /* 
+    문법의미: 부모요소를 기준으로 배치
+    사용이유/목적/결과: 슬라이드 텍스트를 이미지위의 정확한 위치에 두기 위해서
+  */
   left: 50%;
+  /* 
+    문법의미: 부모요소의 왼쪽 기준으로 50% 위치에 배치
+    사용이유/목적/결과: 정렬의 기준점을 만들기 위해 사용
+  */
   bottom: 169px;
+  /* 
+    문법의미: 부모요소의 아랫쪽에서 아이템을 배치
+    사용이유/목적/결과: 아랫쪽에서 169px 떨어뜨리기 위해서 사용
+  */
   margin-left: -720px;
+  /* 
+    문법의미: 요소를 왼쪽으로 720px 이동
+    사용이유/목적/결과: left 50%에서 -720px이동시켜 원하는 위치로 이동시킴
+  */
 }
 
 .mainHero .slideText .slideTitle {
   margin-bottom: 8px;
+  /* 
+    문법의미: 요소의 바깥여백 설정
+    사용이유/목적/결과: 아랫쪽에서 8px 떨어뜨리기 위해 사용
+  */
   font-size: 48px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자 크기를 48px로 설정
+  */
   font-weight: 700;
+  /* 
+    문법의미: 글자의 두께 설정
+    사용이유/목적/결과: 글자 두께를 700으로 설정
+  */
   color: #fff;
+  /* 
+    문법의미: 글자 색 설정
+    사용이유/목적/결과: 글자 색을 #fff로 설정
+  */
 }
 
 .mainHero .slideText a {
   display: inline-block;
+  /* 
+    문법의미:  inline의 성질을 가지면서 동시에 사용자가 원하는 대로 모형을 꾸밀 수 있다.
+    사용이유/목적/결과: 인라인처럼 배치되면서 패딩과 테두리를 설정하기 위해서
+  */
   padding: 0 40px;
+  /* 
+    문법의미: 요소 안쪽 여백을 설정
+    사용이유/목적/결과: 좌우로 40px로 여백을 설정
+  */
   border: 1px solid #fff;
+  /* 
+    문법의미: 테두리를 1px 실선으로 #fff로 설정
+    사용이유/목적/결과: 테두리가 만들어짐
+  */
   border-radius: 25px;
+  /* 
+    문법의미: 태두리를 둥글게 만들기 위해 사용
+    사용이유/목적/결과: 테두리가 둥글어짐
+  */
   line-height: 48px;
+  /* 
+    문법의미: 텍스트의 라인 높이(line height)를 설정
+    사용이유/목적/결과: 안의 글자를 정중앙에 배치하기 위해서
+  */
   font-size: 16px;
+  /* 
+    문법의미: 글자 크기를 설정
+    사용이유/목적/결과: 글자크기를 16px로 설정
+  */
   color: #fff;
+  /* 
+    문법의미: 글자의 색을 설정
+    사용이유/목적/결과: 글자색을 #fff로 설정
+  */
 }
 
 .mainHero .mainSlideController {
   position: absolute;
+  /* 
+    문법의미: 부모요소를 기준으로 배치
+    사용이유/목적/결과: 요소를 부모 기준으로 배치하기 위해서
+  */
   left: 50%;
+  /* 
+    문법의미: 부모요소의 왼쪽 기준으로 50% 위치에 배치
+    사용이유/목적/결과: 정렬의 기준점을 만들기 위해 사용
+  */
   bottom: 80px;
+  /* 
+    문법의미: 부모요소의 아래 기준으로 배치
+    사용이유/목적/결과: 아래기준으로 80px에 배치
+  */
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   width: 1440px;
+  /* 
+    문법의미: 가로 길이를 설정
+    사용이유/목적/결과: 가로를 1440px로 설정
+  */
   margin-left: -720px;
+  /* 
+    문법의미: 요소를 왼쪽으로 720px 이동
+    사용이유/목적/결과: left 50%에서 -720px이동시켜 원하는 위치로 이동시킴
+  */
 }
 
 .mainHero .mainPager {
@@ -263,71 +584,175 @@
     나머지를 자신의 너비값으로 사용하도록 만들 수 있음.
   */
   padding-right: 23px;
+  /* 
+    문법의미: 요소 안쪽 여백을 설정
+    사용이유/목적/결과: 오른쪽 여백을 23px로 설정
+  */
 }
 
 .mainHero .mainPager ul {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
 }
 
 .mainHero .mainPager li {
   width: 16.66%;
+  /* 
+    문법의미: 가로 넓이를 설정
+    사용이유/목적/결과: 가로넓이를 16.66%씩 차지
+  */
   opacity: 0.2;
+  /* 
+    문법의미: 투명도 설정
+    사용이유/목적/결과: 투명도를 0,2로 설정
+  */
 }
 
 .mainHero .mainPager li button {
   width: 100%;
+  /* 
+    문법의미: 기로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 100%로 설정
+  */
   height: 40px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 세로 높이를 40px로 설정
+  */
 }
 
-.mainHero .mainPager li button span{
+.mainHero .mainPager li button span {
   display: block;
+  /* 
+    문법의미: block요소로 설정
+    사용이유/목적/결과: 크기 설정을 하기 위해서 
+  */
   width: 100%;
+  /* 
+    문법의미: 기로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 100%로 설정
+  */
   height: 2px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 세로 높이를 2px로 설정
+  */
   background-color: #fff;
+  /* 
+    문법의미: 배경색 설정
+    사용이유/목적/결과: 배경색을 #fff로 설정
+  */
   text-indent: -99999px;
+  /*
+    공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
+    값을 크게 만들어 어떤 크기의 화면에서도 보이지 않게 만듬.
+  */
 }
 
 .mainHero .mainPager .active {
   opacity: 1;
+  /* 
+    문법의미: 투명도 설정
+    사용이유/목적/결과: 투명도를 1로 설정해서 투명하지 않게 만듬
+  */
 }
 
 .mainHero .btnPrev {
   margin-right: 2px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 오른쪽에서 2px 띄우기 위해서
+  */
 }
 
 .btnPrev button, .btnNext button {
   width: 40px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 40px로 설정
+  */
   height: 40px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 세로 높이를 40px로 설정
+  */
   text-indent: -99999px;
+  /*
+    공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
+    값을 크게 만들어 어떤 크기의 화면에서도 보이지 않게 만듬.
+  */
   display: block;
+  /* 
+    문법의미: block요소로 설정
+    사용이유/목적/결과: 크기 설정을 하기 위해서 
+  */
 }
 
 .btnPrev button {
   background-image: url(../img/btn_prev_wh_40x40.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
 }
 
 .btnNext button {
   background-image: url(../img/btn_next_wh_40x40.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
 }
 
 /* S..메인2-지금 많이 찾는 상품 */
 .itemListWrap {
   width: 1440px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 1440px로 설정
+  */
   margin: 0 auto;
+  /* 
+    문법의미: 좌우의 여백을 똑같이 나눠서 가운데 정렬
+    사용이유/목적/결과: 요소를 가운데 정렬하기 위해서
+  */
 }
 
 .main2 .titleText {
   margin-bottom: 20px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 밑에서 20px 띄우기 위해서
+  */
 }
 
 .main2 .hashTabBtn {
   margin-bottom: 40px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 밑에서 40px 띄우기 위해서
+  */
 }
 
 .main2 .hashTabBtn ul {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   justify-content: center;
+  /* 
+    문법의미: 항목들을 축의 중심 부분에 정렬
+    사용이유/목적/결과: 가운데 정렬하기 위해서
+  */
   gap: 20px;
+  /* 
+    문법의미: 요소들간에 여백 띄우기
+    사용이유/목적/결과: 요소들간에 간격을 띄우기 위해서
+  */
 }
 
 .main2 .hashTabBtn button {
@@ -335,111 +760,310 @@
     버튼태그의 박스 모델은 box-sizing: border-box로 지정되어 있음.
   */
   height: 27px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 높이를 27px로 설정
+  */
   padding-bottom: 10px;
+  /* 
+    문법의미: 요소 안쪽 여백을 설정
+    사용이유/목적/결과: 밑에서 10px띄우기 위해서
+  */
   font-size: 18px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자크기를 18px로 설정
+  */
   color: #666;
+  /* 
+    문법의미: 글자의 색 설정
+    사용이유/목적/결과: 글자의 색을 #666으로 설정
+  */
 }
 
 .main2 .hashTabBtn .active button {
   color: #121212;
+  /* 
+    문법의미: 글자의 색 설정
+    사용이유/목적/결과: 글자의 색을 #121212로 설정
+  */
   border-bottom: 2px solid #121212;
+  /* 
+    문법의미: 테두리 아래쪽 속성을 설정
+    사용이유/목적/결과: 아래쪽 테두리를 2px 실선 #121212로 설정
+  */
 }
 
 .itemList ul {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   justify-content: space-between;
+  /* 
+    문법의미: 항목들을 고르게 정렬합니다.첫 항목은 시작 부분에 밀착되어 정렬됩니다.마지막 항목은 끝 부분에 밀착되어 정렬됩니다. 
+    사용이유/목적/결과: 양쪽끝으로 배치 후 동일한 간격으로 설정
+  */
 }
 
 .itemList li {
   position: relative;
+  /* 
+    문법의미: 위치기준으로 설정
+    사용이유/목적/결과: 다른 아이템의 기준으로 삼기 위해서
+  */
   width: 345px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 345px로 설정
+  */
 }
 
 .itemList li .photo {
   margin-bottom: 12px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 밑으로 12px띄우기 위해서 
+  */
 }
 
 .itemList li img {
   width: 100%;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 이미지를 li크기에 맞게 설정하기 위해서 
+  */
   height: auto;
+  /* 
+    문법의미: 높이를 설정
+    사용이유/목적/결과: width에 맞춰 높이값 설정
+  */
 }
 
 .itemList li .category {
   margin-bottom: 4px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 밑으로 4px 띄우기 위해서
+  */
   color: #121212;
+  /* 
+    문법의미: 글자의 색 설정
+    사용이유/목적/결과: 글자의 색을 #121212로 설정
+  */
 }
 
 .itemList li .name {
   margin-bottom: 20px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 밑으로 20px 띄우기 위해서
+  */
   font-size: 18px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자를 18px로 설정
+  */
   font-weight: 700;
+  /* 
+    문법의미: 글자 두께 설정
+    사용이유/목적/결과: 글자 두께를 700으로 설정
+  */
   color: #121212;
+  /* 
+    문법의미: 글자 색 설정
+    사용이유/목적/결과: 글자 색을 #121212로 설정
+  */
 }
 
 .itemList li .price {
   font-size: 16px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자를 16px로 설정
+  */
   color: #121212;
+  /* 
+    문법의미: 글자 색 설정
+    사용이유/목적/결과: 글자 색을 #121212로 설정
+  */
 }
 
 .itemList li .favo {
   position: absolute;
+  /* 
+    문법의미: 부모요소를 기준으로 배치
+    사용이유/목적/결과: 요소를 부모 기준으로 배치하기 위해서
+  */
   top: 0;
   right: 0;
+  /* 
+    사용이유/목적/결과: 요소를 부모 기준으로 위에서 0 오른쪽에서 0에 배치
+  */
 }
 
 .itemList li .favo button {
   width: 52px;
+  /* 
+    문법의미: 가로 넓이를 설정
+    사용이유/목적/결과: 가로 넓이를 52px로 설정
+  */
   height: 52px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 세로 높이를 52px로 설정
+  */
   background-image: url(../img/ico-heart-gr-52x52.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
   text-indent: -99999px;
+  /*
+    공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
+    값을 크게 만들어 어떤 크기의 화면에서도 보이지 않게 만듬.
+  */
 }
 
 /* S. 메인3-기획전 */
 .special {
   width: 1440px;
+  /* 
+    문법의미: 가로의 넓이 설정
+    사용이유/목적/결과: 가로의 넓이를 1440px로 설정
+  */
   margin: 0 auto;
+  /* 
+    문법의미: 좌우의 여백을 똑같이 나눠서 가운데 정렬
+    사용이유/목적/결과: 요소를 가운데 정렬하기 위해서
+  */
 }
 
 .specialList ul {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   justify-content: space-between;
+  /* 
+    문법의미: 항목들을 고르게 정렬합니다.첫 항목은 시작 부분에 밀착되어 정렬됩니다.마지막 항목은 끝 부분에 밀착되어 정렬됩니다. 
+    사용이유/목적/결과: 양쪽끝으로 배치 후 동일한 간격으로 설정
+  */
 }
 
 .specialList li {
   text-align: center;
+  /* 
+    문법의미: 블록 요소나 표의 칸 상자의 가로 정렬을 설정
+    사용이유/목적/결과: 글자를 가운데 배치
+  */
   width: 464px;
+  /* 
+    문법의미: 가로 넓이를 설정
+    사용이유/목적/결과: 가로 넓이를 464px로 설정
+  */
 }
 
 .specialList .photo {
   margin-bottom: 32px;
+  /* 
+    문법의미: 요소 바깥 여백을 설정
+    사용이유/목적/결과: 아래로부터 32px 띄움
+  */
 }
 
 .specialList .photo img {
   width: 100%;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: li의 크기에 맞춰서 이미지 크기를 조절하기 위해서 
+  */
   height: auto;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: width의 크기에 따라 높이 설정
+  */
 }
 
 .specialList .title {
   margin-bottom: 8px;
+  /* 
+    문법의미: 요소 바깥 여백 설정
+    사용이유/목적/결과: 아래로부터 8px 띄움
+  */
   font-size: 18px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자 크기를 10px로 설정
+  */
   font-weight: 700;
+  /* 
+    문법의미: 글자 굵기 설정
+    사용이유/목적/결과: 글자 굵기를 700으로 설정
+  */
   color: #121212;
+  /* 
+    문법의미: 글자 색 설정
+    사용이유/목적/결과: 글자 색을 #121212로 설정
+  */
 }
 
 .specialList .descript {
   margin-bottom: 24px;
+  /* 
+    문법의미: 요소 바깥 여백 설정
+    사용이유/목적/결과: 요소를 아래에서 24px 띄움
+  */
   font-size: 16px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자 크기를 16px로 설정
+  */
   color: #888;
+  /* 
+    문법의미: 글자 색 설정
+    사용이유/목적/결과: 글자 색을 #888로 설정
+  */
 }
 
 .specialList .btn {
   margin: 0 auto;
+  /* 
+    문법의미: 좌우의 여백을 똑같이 나눠서 가운데 정렬
+    사용이유/목적/결과: 요소를 가운데 정렬하기 위해서
+  */
   border: 1px solid #ddd;
+  /* 
+    문법의미: 테두리를 설정
+    사용이유/목적/결과: 테두리를 1px 실선 #ddd색으로 설정
+  */
   width: 158px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 158px로 설정
+  */
   text-align: center;
+  /* 
+    문법의미: 글자를 가운데 배치
+    사용이유/목적/결과: 글자를 가운데에 배치하기 위해서 
+  */
   color: #666;
+  /* 
+    문법의미: 글자의 색을 설정
+    사용이유/목적/결과: 글자의 색을 #666으로 설정
+  */
   line-height: 38px;
+  /* 
+    문법의미: 텍스트의 라인 높이(line height)를 설정
+    사용이유/목적/결과: 안의 글자를 정중앙에 배치하기 위해서
+  */
   border-radius: 20px;
+  /* 
+    문법의미: 테두리의 둥글기를 설정
+    사용이유/목적/결과: 테두리의 둥글기를 20px로 설정
+  */
 }
 
 /* 메인4-추천 스타일 */
@@ -571,57 +1195,137 @@
 /* 메인7- 인스타그램 */
 .instagram {
   width: 1440px;
+  /* 
+    문법의미: 가로의 넓이 설정
+    사용이유/목적/결과: 가로의 넓이를 1440px로 설정
+  */
   margin: 0 auto;
+  /* 
+    문법의미: 좌우의 여백을 똑같이 나눠서 가운데 정렬
+    사용이유/목적/결과: 요소를 가운데 정렬하기 위해서
+  */
   margin-bottom: 160px;
+  /* 
+    문법의미: 요소 바깥 여백 설정
+    사용이유/목적/결과: 요소를 밑에하고 160px띄우기 위해서
+  */
 }
 
 .instagramIcons {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   justify-content: space-between;
+  /* 
+    문법의미: 항목들을 고르게 정렬합니다.첫 항목은 시작 부분에 밀착되어 정렬됩니다.마지막 항목은 끝 부분에 밀착되어 정렬됩니다. 
+    사용이유/목적/결과: 양쪽끝으로 배치 후 동일한 간격으로 설정
+  */
   align-items: center;
+  /* 
+    문법의미: 플렉스 아이템의 마진 박스는 교차 축의 라인에서 가운데 정렬
+    사용이유/목적/결과: 아이템을 가운데 정렬하기 위해서
+  */
   margin-bottom: 30px;
+  /* 
+    문법의미: 요소 바깥 여백 설정
+    사용이유/목적/결과: 요소를 밑에하고 30px띄우기 위해서
+  */
 }
 
 .instaIcon a{
   display: block;
+  /* 
+    문법의미: block요소로 설정
+    사용이유/목적/결과: 크기 설정을 하기 위해서 
+  */
   width: 32px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 32px로 설정
+  */
   height: 32px;
+  /* 
+    문법의미: 세로 높이 설정
+    사용이유/목적/결과: 세로 높이를 32px로 설정
+  */
   background-image: url(../img/ico-instar-32x32.png);
+  /* 
+    문법의미: 배경이미지 설정
+    사용이유/목적/결과: 이미지를 설정하기 위해서
+  */
   text-indent: -99999px;
+  /*
+    공간은 그대로, 글자내용만 화면의 왼쪽으로 이동됨.
+    값을 크게 만들어 어떤 크기의 화면에서도 보이지 않게 만듬.
+  */
 }
 
 .instaTitle {
   font-size: 28px;
+  /* 
+    문법의미: 글자 크기 설정
+    사용이유/목적/결과: 글자 크기를 28px로 설정
+  */
   font-weight: 700;
+  /* 
+    문법의미: 글자 굵기 설정
+    사용이유/목적/결과: 글자 굵기를 700으로 설정
+  */
 }
 
 .instaImg ul {
   display: flex;
+  /* 
+    문법의미: 자식요소를 flexitem으로 설정
+    사용이유/목적/결과: 가로배치를 하기 위해서 
+  */
   flex-wrap: wrap;
+  /* 
+    문법의미: flex-item 요소들이 내부 로직에 의해 분할되어 여러 행에 걸쳐서 배치
+    사용이유/목적/결과: 아이템들을 두줄로 배치하기 위해서 
+  */
   gap: 10px;
+  /* 
+    문법의미: 요소들 사이의 여백을 만들어주는 속성
+    사용이유/목적/결과: 요소들 사이에 여백을 10px씩 주기 위해서 
+  */
 }
 
 .instaImg img {
   width: 280px;
+  /* 
+    문법의미: 가로 넓이 설정
+    사용이유/목적/결과: 가로 넓이를 280px로 설정
+  */
   height: 280px;
+  /* 
+    문법의미: 세로 높이 설정 
+    사용이유/목적/결과: 세로 높이를 280px로 설정
+  */
 }
 
 /* footer */
 #footer {
   position: relative;
   padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 80px;
   background-color: #eee;
 }
 
 .foot1 {
-  position: absolute;
-  top: 24px;
-  left: 40px;
-  right: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
+}
+
+.foot1 .left {
+  display: flex;
+  gap: 120px;
 }
 
 .foot1 .fLogo {
@@ -630,6 +1334,12 @@
   background-image: url(../img/logo_nv.png);
   background-size: 100% auto;
   text-indent: -99999px;
+}
+
+.foot1 .left .ir a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #121212;
 }
 
 .foot1 .fSns ul {
@@ -663,22 +1373,68 @@
 }
 
 .foot2 {
-  position: relative;
-  width: 1440px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.foot2 .ir {
-  margin-bottom: 60px;
+.foot2 .left {
+  padding-left: 200px;
 }
 
-.foot2 .ir a {
-  font-size: 16px;
-  font-weight: 700;
-  color: #121212;
-  line-height: 52px;
+.foot2 .fMenu {
+  margin-bottom: 40px;
 }
 
 .foot2 .fMenu ul, .foot2 .fSecurityMenu ul {
   display: flex;
+}
+
+.foot2 .fMenu li::after, 
+.foot2 .fSecurityMenu li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #121212;
+  opacity: 0.2;
+}
+
+
+.foot2 .fMenu li:last-child::after, 
+.foot2 .fSecurityMenu li:last-child::after {
+  display: none;
+} 
+
+.foot2 .fMenu li a, 
+.foot2 .fSecurityMenu li a {
+  color: #121212;
+}
+
+.foot2 .fMenu .point a, 
+.foot2 .fSecurityMenu .point a {
+  font-weight: 700;
+}
+
+.foot2 .fInfo,
+.foot2 .fcopyright {
+  margin-bottom: 40px;
+  line-height: 26px;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.foot2 .fInfo span {
+  margin-right: 16px;
+}
+
+.foot2 .fInfo a, 
+.foot2 .fcopyright a {
+  color: #121212;
+  text-decoration: underline;
+}
+
+.foot2 .fcopyright a {
+  margin-left: 16px;
 }
